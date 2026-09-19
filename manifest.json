@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Ad Dimmer",
+  "version": "1.0.0",
+  "description": "Fades the text of promoted posts on Reddit to light gray so they visually recede from the feed.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.reddit.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
